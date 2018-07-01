@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<object>
+  <order manager="plone.portalheader" skinname="*">
+    <viewlet name="message" insert-after="*" />
+    <viewlet name="days_to_conference" insert-after="*" />
+  </order>
+<object>

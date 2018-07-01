@@ -9,10 +9,27 @@
   <browser:page
      name="my-view"
      for="*"
-     class=".my_view.MyView"
      template="my_view.pt"
      permission="zope2.View"
      />
-        
+
+  <browser:viewlet
+     name="days_to_conference"
+     for="*"
+     manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+     layer="*"
+     class=".first_viewlet.DaysToConferenceViewlet"
+     template="first_viewlet.pt"
+     permission="zope2.View"
+     />
+
+  <browser:viewlet
+     name="message"
+     for="*"
+     manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+     layer="*"
+     class=".second_viewlet.MessageViewlet"
+     permission="zope2.View"
+     />
 
 </configure>
